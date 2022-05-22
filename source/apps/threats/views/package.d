@@ -1,1 +1,1 @@
-
+module apps.threats.views;
