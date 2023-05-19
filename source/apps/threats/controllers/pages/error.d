@@ -3,9 +3,9 @@
   License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
   Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module apps.myname.controllers.pages.error;
+module apps.threats.controllers.pages.error;
 
-import apps.myname;
+import apps.threats;
 @safe:
 
 class DMYNAMEErrorPageController : DAPPPageController {
