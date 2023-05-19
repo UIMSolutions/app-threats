@@ -35,6 +35,6 @@ static this() {
   threatsApp = App
     .name("threatsApp")
     .rootPath("/apps/threats")
-    .addRoute(Route("", HTTPMethod.GET, MYNAMEIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, MYNAMEIndexPageController));
+    .addRoute(Route("", HTTPMethod.GET, THTIndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, THTIndexPageController));
 }

@@ -8,14 +8,14 @@ module apps.threats.controllers.pages.error;
 import apps.threats;
 @safe:
 
-class DMYNAMEErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEErrorPageController"));
+class DTHTErrorPageController : DAPPPageController {
+  mixin(ControllerThis!("THTErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEErrorView(this));
+      .view(THTErrorView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEErrorPageController"));
+mixin(ControllerCalls!("THTErrorPageController"));

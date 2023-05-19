@@ -8,14 +8,14 @@ module apps.threats.controllers.pages.index;
 import apps.threats;
 @safe:
 
-class DMYNAMEIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEIndexPageController"));
+class DTHTIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("THTIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEIndexView(this));
+      .view(THTIndexView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEIndexPageController"));
+mixin(ControllerCalls!("THTIndexPageController"));
