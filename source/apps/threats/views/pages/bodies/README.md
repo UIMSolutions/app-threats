@@ -1,2 +1,2 @@
-# Package 📦 apps.myname.views.pages.bodies
+# Package 📦 apps.threats.views.pages.bodies
 

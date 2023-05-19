@@ -1,5 +1,5 @@
 {
-	"name": "app-myname",
+	"name": "app-threats",
 	"description": "App",
 	"authors": [
 		"Sicherheitsschmiede",
@@ -17,7 +17,7 @@
 			"name": "libtest",
 			"targetType": "library",
 			"versions": [
-				"test_app_myname"
+				"test_app_threats"
 			]
 		}
 	],
