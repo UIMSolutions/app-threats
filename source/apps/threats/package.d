@@ -1,4 +1,9 @@
-module apps.threats;
+/*********************************************************************************************************
+  Copyright: © 2015-2023 Ozan Nurettin Süel (Sicherheitsschmiede)                                        
+  License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
+  Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
+**********************************************************************************************************/
+module apps.myname;
 
 mixin(ImportPhobos!());
 
@@ -18,18 +23,18 @@ public import uim.servers;
 public import langs.javascript;
 
 public {
-  import apps.tht.controllers;
-  import apps.tht.helpers;
-  import apps.tht.tests;
-  import apps.tht.views;
+  import apps.myname.controllers;
+  import apps.myname.helpers;
+  import apps.myname.routers;
+  import apps.myname.tests;
+  import apps.myname.views;
 }
 
-DApp threatsApp;
+DApp mynameApp;
 static this() {
-  threatsApp = App
-    .name("threatsApp")
-    .rootPath("/apps/threats")
-    .addRoute(Route("", HTTPMethod.GET, THTIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, THTIndexPageController));
+  mynameApp = App
+    .name("mynameApp")
+    .rootPath("/apps/myname")
+    .addRoute(Route("", HTTPMethod.GET, MYNAMEIndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, MYNAMEIndexPageController));
 }
-
