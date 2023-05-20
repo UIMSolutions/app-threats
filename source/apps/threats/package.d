@@ -31,7 +31,7 @@ public {
 }
 
 static this() {
-  AppRegistry.register(  
+  AppRegistry.register("apps/threats",  
     App
     .name("threatsApp")
     .rootPath("/apps/threats")
