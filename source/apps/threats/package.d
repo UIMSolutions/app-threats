@@ -30,11 +30,11 @@ public {
   import apps.threats.views;
 }
 
-DApp threatsApp;
 static this() {
-  threatsApp = App
+  AppRegistry.register(  
+    App
     .name("threatsApp")
     .rootPath("/apps/threats")
     .addRoute(Route("", HTTPMethod.GET, THTIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, THTIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, THTIndexPageController)));
 }
