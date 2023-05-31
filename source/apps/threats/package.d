@@ -17,7 +17,7 @@ public import uim.html;
 public import uim.oop;
 public import uim.models;
 public import uim.apps;
-public import uim.controls;
+public import web.controls;
 public import uim.servers;
 
 public import langs.javascript;
