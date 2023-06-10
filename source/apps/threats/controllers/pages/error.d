@@ -8,7 +8,7 @@ module apps.threats.controllers.pages.error;
 import apps.threats;
 @safe:
 
-class DTHTErrorPageController : DAPPPageController {
+class DTHTErrorPageController : DPageController {
   mixin(ControllerThis!("THTErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
