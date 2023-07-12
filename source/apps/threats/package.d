@@ -32,9 +32,10 @@ public {
 
 static this() {
   AppRegistry.register("apps/threats",  
-    App
-    .name("threatsApp")
-    .rootPath("/apps/threats")
-    .addRoute(Route("", HTTPMethod.GET, IndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, IndexPageController)));
+    App("threatsApp", "/apps/threats")
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
