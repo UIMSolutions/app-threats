@@ -31,7 +31,7 @@ public {
 }
 
 static this() {
-  AppRegistry.register("apps/threats",  
+  AppRegistry.register("apps.threats",  
     App("threatsApp", "/apps/threats")
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),
