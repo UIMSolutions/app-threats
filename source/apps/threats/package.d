@@ -7,8 +7,10 @@ module apps.threats;
 
 mixin(ImportPhobos!());
 
-// Dub
-public import vibe.d;
+// External
+public {
+  import vibe.d;
+}
 
 // UIM
 public import uim.core;
@@ -31,11 +33,19 @@ public {
 }
 
 static this() {
-  AppRegistry.register("apps.threats",  
-    App("threatsApp", "/apps/threats")
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  auto myApp = App("threatsApp", "apps/threats");
+
+  with (myApp) {
+    importTranslations;
+    addControllers([
+      "threats.index": IndexPageController
+    ]);
+
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("threats.index")),
+      Route("/", HTTPMethod.GET, controller("threats.index"))
     );
+  }
+
+  AppRegistry.register("apps.threats", myApp);
 }
